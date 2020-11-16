@@ -1,0 +1,8 @@
+{
+  "env": {
+    "MONGO_ATLAS_USERNAME": "krazy_eights",
+    "MONGO_ATLAS_PASSWORD": "helloworld",
+    "MONGO_ATLAS_DATABASE": "teams",
+    "JWT_SECRET": "5FAA2C2120CFA0AD7262AE3A"
+  }
+}

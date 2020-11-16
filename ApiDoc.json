@@ -1,0 +1,80 @@
+{
+  "Auth_Routes": [
+    {
+      "method": "POST",
+      "path": "auth/loginUser",
+      "payload": "email , password",
+      "responses": "userId , token , expiresIn"
+    },
+    {
+      "method": "POST",
+      "path": "auth/createUser",
+      "payload": "name,email , password",
+      "responses": "userid, name, email, password"
+    },
+    {
+      "method": "POST",
+      "path": "auth/deleteUser",
+      "payload": "userId",
+      "responses": "Confirmation"
+    },
+    {
+      "method": "POST",
+      "path": "auth/userAllPost",
+      "payload": "userId",
+      "responses": "List of Post Data belongs to User."
+    }
+  ],
+
+  "Post_Routes": [
+    {
+      "method": "GET",
+      "path": "post/posts",
+      "payload": "",
+      "responses": "All Posts in Database"
+    },
+    {
+      "method": "GET",
+      "path": "post/posts/:postId",
+      "payload": "",
+      "responses": "Details of post whose id is passed in params. "
+    },
+    {
+      "method": "POST",
+      "path": "post/createPost",
+      "payload": "caption , description, creator",
+      "responses": "Post Data"
+    },
+    {
+      "method": "POST",
+      "path": "post/editPost",
+      "payload": "Post Data",
+      "responses": "Post Data"
+    },
+    {
+      "method": "POST",
+      "path": "post/likePost",
+      "payload": "postId",
+      "responses": "Confirmation"
+    },
+    {
+      "method": "POST",
+      "path": "post/commentPost",
+      "payload": "message, creatorId, postId",
+      "responses": "Comment Object"
+    },
+    {
+      "method": "POST",
+      "path": "post/likeComment",
+      "payload": "commentId",
+      "responses": "Confirmation"
+    },
+    {
+      "method": "POST",
+      "path": "post/deleteComment",
+      "payload": "commentId",
+      "responses": "Confirmation."
+    }
+  ],
+  "Team_Routes": []
+}
